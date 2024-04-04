@@ -1,0 +1,97 @@
+.forth-block{
+    background-image: url('../images/forth-block_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .forth-block_container{
+        @extend %container;
+        justify-content: space-between;
+    }
+    padding: 98px 118px;
+    .forth-block_title{
+        max-width: 350px;
+        @include text(67px, left,white);
+        letter-spacing: 0.1px;
+        margin-top: clamp(0vh, -22.64vw + 35.38vw, 11.188vw);
+    }
+    .forth-block_subtitle{
+        max-width: 242px;
+        @include text(21px, left,white);
+        letter-spacing: 0.1px;
+        margin-top: 12px;
+        margin-bottom: 29px;
+    }
+    .forth-block_button{
+        @extend %button;   
+        max-width: 189px;
+        max-height: 62px;
+        padding: 20px 54px;
+    }
+    .forth-block_question{
+        @include text(18px, left,white);
+        letter-spacing: 0;
+        margin-top: 33px;
+    }
+    .forth-block_text{
+        display: flex;
+        flex-direction: row;
+    }
+    .forth-block_cities{
+        @include text(clamp(4.188vw, -0.619vw + 7.51vw, 6.563vw), right,white);
+        max-width: 473px;
+    }
+}
+@media(max-width:1530px){
+    .forth-block{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: clamp(3.125vw, -2.946vw + 9.49vw, 6.125vw) clamp(3.125vw, -5.476vw + 13.44vw, 7.375vw);
+    }
+}
+@media (max-width:1024px){
+    .forth-block{
+        .forth-block_cities{
+            font-size: clamp(1.875vw, -5.063vw + 14.45vw, 4.188vw);
+            max-width: clamp(19.563vw, -10.438vw + 62.5vw, 29.563vw);
+        }
+        .forth-block_title{
+            font-size: clamp(1.875vw, -5.063vw + 14.45vw, 4.188vw);
+        }
+        .forth-block_button{
+            padding: 11px 33px;;
+        }
+    }
+}
+@media (max-width:784px){
+    .forth-block{
+        padding: 30px 0px;
+        background-size:  cover;
+        .forth-block_container{
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            gap: 40px;
+        }
+        .forth-block_main_text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .forth-block_text{
+            max-width: 100%;
+            text-align: center;
+        }
+        .forth-block_subtitle{
+            max-width: 80%;
+            text-align: center;
+            margin: 0;
+        }
+        .forth-block_question{
+            margin: 0;
+        }
+        .forth-block_cities{
+            max-width: 80%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+body{
+    box-sizing: border-box;
+}
+%container{
+    max-width: 1060px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+%button{
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18.34px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-radius: 999px;
+
+    background: rgb(113, 64, 235);
+}
+@mixin text($fs , $textalign,$color){
+    color: $color;
+    font-family: Roboto;
+    font-size: $fs;
+    font-weight: 400;
+    line-height: none;
+    letter-spacing: 5px;
+    text-align: $textalign;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+%item{
+    background-color: white;
+    border-radius: 16px;
+    max-width: 384px;
+    max-height: 517px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 67px;
+}
+%img_bicycle{
+    max-width: 100%;
+}
+%offer{
+    margin-left: 11px;
+    max-width: 110px;
+    max-height: 26px;
+    background-color: #F1EEF8;
+    color: #7140EB;
+    font-size: 17px;
+    border-radius: 20px;
+    padding: 1px 10px;
+}
+%details{
+    margin-top: 11px;
+    max-width: 180px;
+    max-height: 61px;
+    border: 1px solid #2E2C34;
+    border-radius: 999px;
+    padding: 22px 0px 23px 39px;
+}
+%arrow{
+    content: "\2794";
+    margin-left: 6px;
+}   
+@mixin features($max_width){
+    max-width: $max_width;
+    max-height: 37px;
+    padding: 7px 16px 8px 28px;
+    background-color: #F5F5F7;
+    border-radius: 40px;
+    letter-spacing: 0; 
+    margin-bottom: 24px;
+}   
+%bicycle{    
+    background-color: #F5F5F7;
+    border-radius: 16px;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 67px;
+}        

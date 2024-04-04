@@ -1,0 +1,87 @@
+.sixth-block{
+    background-color: white;
+    .sixth-block_container{
+        @extend %container;
+        padding-top: 68px;
+        padding-bottom: 73px;
+    }
+    .sixth-block_text{
+        display: flex;
+        flex-direction: column;
+    }
+    .sixth-block_subtitles{
+        display: flex;
+        flex-direction: row;
+        gap: 130px;
+    }
+    h1{
+        @include text(66px, left,#49464F);
+
+    }
+    p{
+        @include text(29px, left,#49464F);
+        letter-spacing: 0;
+        margin-top: 98px;
+    }
+    .sixth-block_member{
+        @include text(17px, left,#49464F);
+        letter-spacing: 0;
+        margin-top: 19px;
+    }
+    .sixth-block_subtitle_1{
+        max-width: 246px;
+    }
+    .sixth-block_subtitle_2{
+        max-width: 266px;
+        .sixth-block_member{
+            margin-top: 47px;
+        }
+    }
+    .sixth-block_subtitle_3{
+        max-width: 237px;
+    }
+}
+@media (max-width:1048px){
+    .sixth-block{
+        .sixth-block_container{
+            .sixth-block_text{
+                h1{
+                    font-size: 55px;
+                }
+                .sixth-block_subtitles{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:850px){
+    .sixth-block{
+        .sixth-block_container{
+            .sixth-block_text{
+                margin: 0 auto;
+                .sixth-block_subtitles{
+                    margin: 0 auto;
+                    flex-direction: column;
+                    gap: 20px;
+                    .sixth-block_subtitle_1,.sixth-block_subtitle_2,.sixth-block_subtitle_3{
+                        max-width: 300px;
+                        margin: 0 auto;
+
+                    }
+                }
+                
+                h1{
+                    font-size: 50px;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                p{
+                    font-size: 22px;
+                    text-align: center;
+                }
+                .sixth-block_member{font-size: 18px;}
+            }
+        }
+    }
+}
